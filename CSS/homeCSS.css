@@ -1,0 +1,105 @@
+body {
+    background-image: url('../Assets/BgFolder/Background.png');
+    background-size: cover;       
+    background-repeat: no-repeat;  
+    background-attachment: fixed;   
+    background-position: center;  
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Head Buttons */
+.head-container {
+    display: flex;
+    height: 100px;
+    width: 50%;
+
+    background: rgba(0,0,0,.5);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    backdrop-filter: blur(4px);
+
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.head-item {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+}
+
+#headbutton{  
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: verdana;
+    font-size: 16px;
+    font-weight: bold;
+    color: Black;
+    background-color: beige; /* Bootstrap primary color */
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+#headbutton:hover{
+    background-color: #b2a9ec; /* Lighter shade on hover */
+    color: beige;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transform: scale(0.95);
+}    
+
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 75%;
+    padding: 50px;         
+}
+
+
+/* Image Styles */
+#images-container {
+    width: 200px;
+    height: 100px;
+
+}
+
+#images-landscape {
+    width: 1200px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#images-landscape:hover {
+    transform: scale(1.05);
+}
+
+
+/* Message Styles */
+.message-container {
+    width: 600px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(4px);
+
+    overflow-wrap: break-word; /* breaks long words to prevent overflow */
+    word-break: break-word;    /* ensures long strings don’t spill out */
+}
+
+.message {
+    color: white;
+    font-family: "Loving", cursive;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}

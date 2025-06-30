@@ -1,0 +1,197 @@
+body {
+    background-image: url('../Assets/BgFolder/Background.png');
+    background-size: cover;       
+    background-repeat: no-repeat;  
+    background-attachment: fixed;   
+    background-position: center;  
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Head Buttons */
+.head-container {
+    display: flex;
+    height: 100px;
+    width: 50%;
+
+    background: rgba(0,0,0,.5);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    backdrop-filter: blur(4px);
+
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+.head-item {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+}
+
+#headbutton{  
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: verdana;
+    font-size: 16px;
+    font-weight: bold;
+    color: Black;
+    background-color: beige; /* Bootstrap primary color */
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+#headbutton:hover{
+    background-color: #b2a9ec; /* Lighter shade on hover */
+    color: beige;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transform: scale(0.95);
+}    
+
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 75%;
+    padding: 50px;         
+}
+
+
+/* Image Styles */
+#images-container {
+    width: 200px;
+    height: 100px;
+
+}
+
+#images-landscape {
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#images-landscape:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+#images-portrait{
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+#images-portrait:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* W3.CSS animate from top */
+.picsTogether {
+  animation: animateTop 1s ease;
+}
+
+@keyframes animateTop {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* Button styles */
+#left-button {
+    position: fixed;
+    left: 30px;       /* distance from left edge */
+    top: 50%;         /* center vertically */
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    z-index: 1000;
+
+    cursor: pointer;
+    font-family: verdana;
+    font-size: 16px;
+    font-weight: bold;
+    color: Black;
+    background-color: beige; /* Bootstrap primary color */
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    
+}
+
+#left-button:hover {
+    background-color: skyblue; /* Lighter shade on hover */
+    color: beige;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transform: scale(0.95);
+}
+
+#right-button {
+    position: fixed;
+    right: 30px;      /* distance from right edge */
+    top: 50%;         /* center vertically */
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    z-index: 1000;
+
+    cursor: pointer;
+    font-family: verdana;
+    font-size: 16px;
+    font-weight: bold;
+    color: Black;
+    background-color: beige; /* Bootstrap primary color */
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+#right-button:hover {
+    background-color: skyblue; /* Lighter shade on hover */
+    color: beige;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transform: scale(0.95);
+}
+
+
+/* Message Styles */
+.message-container {
+    width: 600px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(4px);
+
+    overflow-wrap: break-word; /* breaks long words to prevent overflow */
+    word-break: break-word;    /* ensures long strings don’t spill out */
+}
+
+.message {
+    color: white;
+    font-family: "Loving", cursive;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}

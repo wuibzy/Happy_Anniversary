@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites of You</title>
+    <link rel="stylesheet" href="../CSS/favOfYouCSS.css">
+    <style>
+        .picsOfYou {display:none;}
+    </style>
+</head>
+
+    <body>  
+
+
+    <div class="head-container">
+
+        <div class="head-item"><button id="headbutton" onclick="redirectToHome()"><p id="idtext">HOME</p></button></div>
+        <div class="head-item"><button id="headbutton" onclick="redirectToTogether()"><p id="idtext">TOGETHER</p></button></div>
+        <div class="head-item"><button id="headbutton" onclick="redirectToVid()"><p id="idtext">VIDEOS</p></button></div>
+
+    </div>
+
+        <div class="container">
+            <div class="images-container">
+                <img id="images-portrait" class="picsOfYou" src="../Assets/Her/1.jpeg">
+                <img id="images-portrait" class="picsOfYou" src="../Assets/Her/2.jpeg">
+                <img id="images-portrait" class="picsOfYou" src="../Assets/Her/3.jpeg">
+                <img id="images-portrait" class="picsOfYou" src="../Assets/Her/4.jpeg">
+                <img id="images-portrait" class="picsOfYou" src="../Assets/Her/5.JPG">
+                <img id="images-portrait" class="picsOfYou" src="../Assets/Her/6.jpeg">
+                <img id="images-portrait" class="picsOfYou" src="../Assets/Her/7.jpeg">
+                <img id="images-portrait" class="picsOfYou" src="../Assets/Her/8.png">
+                <img id="images-portrait" class="picsOfYou" src="../Assets/Her/9.png">
+            </div>
+        </div>
+       
+
+        <button id="left-button" onclick="plusDivs(-1)">Previous</button>
+        <button id="right-button" onclick="plusDivs(1)">Next</button>
+
+        <div class="container">
+        <div class="message-container">
+            <p class="message"></p>
+        </div>
+        </div>
+
+    <script src="../JS/favOfYouJS.js"></script>
+
+    </body>
+
+</html> 

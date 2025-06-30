@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Videos Together</title>
+    <link rel="stylesheet" href="../CSS/videoCSS.css">
+    <style>
+        .picsTogether {display:none;}
+    </style>
+</head>
+
+    <body>  
+
+
+    <div class="head-container">
+
+        <div class="head-item"><button id="headbutton" onclick="redirectToHome()"><p id="idtext">HOME</p></button></div>
+        <div class="head-item"><button id="headbutton" onclick="redirectToFav()"><p id="idtext">FAVORITES OF YOU</p></button></div>
+        <div class="head-item"><button id="headbutton" onclick="redirectToTogether()"><p id="idtext">TOGETHER</p></button></div>
+
+    </div>
+
+    <div class="container">
+    <video width="640" height="460" class="video" controls>
+    <source src="../Assets/Videos/1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </div>
+
+    <div class="container">
+    <video width="640" height="460" class="video"  controls>
+    <source src="../Assets/Videos/2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </div>
+
+    <div class="container">
+    <video width="640" height="460" class="video" controls>
+    <source src="../Assets/Videos/3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </div>
+
+    <script src="../JS/videoJS.js"></script>
+
+    </body>
+
+</html> 

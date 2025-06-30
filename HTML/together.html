@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Moments Together</title>
+    <link rel="stylesheet" href="../CSS/togetherCSS.css">
+    <style>
+        .picsTogether {display:none;}
+    </style>
+</head>
+
+    <body>  
+
+
+    <div class="head-container">
+
+        <div class="head-item"><button id="headbutton" onclick="redirectToHome()"><p id="idtext">HOME</p></button></div>
+        <div class="head-item"><button id="headbutton" onclick="redirectToFav()"><p id="idtext">FAVORITES OF YOU</p></button></div>
+        <div class="head-item"><button id="headbutton" onclick="redirectToVid()"><p id="idtext">VIDEOS</p></button></div>
+
+    </div>
+
+        <div class="container">
+            <div class="images-container">
+                <img id="images-landscape" class="picsTogether" src="../Assets/Together/1.jpg">
+                <img id="images-portrait" class="picsTogether" src="../Assets/Together/2.jpeg">
+                <img id="images-landscape" class="picsTogether" src="../Assets/Together/3.jpeg">
+                <img id="images-portrait" class="picsTogether" src="../Assets/Together/4.jpeg">
+                <img id="images-portrait" class="picsTogether" src="../Assets/Together/5.jpeg">
+                <img id="images-landscape" class="picsTogether" src="../Assets/Together/6.jpg">
+                <img id="images-portrait" class="picsTogether" src="../Assets/Together/7.jpeg">
+                <img id="images-portrait" class="picsTogether" src="../Assets/Together/8.jpeg">
+                <img id="images-portrait" class="picsTogether" src="../Assets/Together/9.jpeg">
+                <img id="images-portrait" class="picsTogether" src="../Assets/Together/10.jpeg">
+                <img id="images-portrait" class="picsTogether" src="../Assets/Together/11.jpeg">
+                <img id="images-portrait" class="picsTogether" src="../Assets/Together/12.jpeg">
+            </div>
+        </div>
+       
+
+        <button id="left-button" onclick="plusDivs(-1)">Previous</button>
+        <button id="right-button" onclick="plusDivs(1)">Next</button>
+
+        <div class="container">
+        <div class="message-container">
+            <p class="message"></p>
+        </div>
+        </div>
+       
+    <script src="../JS/togetherJS.js"></script>
+
+    </body>
+
+</html> 
